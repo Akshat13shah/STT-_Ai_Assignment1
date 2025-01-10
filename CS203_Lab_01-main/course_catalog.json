@@ -20,5 +20,27 @@
         "prerequisites": "Basic Python, Linux",
         "grading": "50% Assignment, 50% Quiz",
         "description": ""
+    },
+    {
+        "code": "ofh",
+        "name": " ",
+        "instructor": "iudgf",
+        "semester": "e",
+        "schedule": "e",
+        "classroom": "e",
+        "prerequisites": "ee",
+        "grading": "e",
+        "description": ""
+    },
+    {
+        "code": " ",
+        "name": " ",
+        "instructor": " ",
+        "semester": " ",
+        "schedule": " ",
+        "classroom": " ",
+        "prerequisites": " ",
+        "grading": " ",
+        "description": " "
     }
 ]

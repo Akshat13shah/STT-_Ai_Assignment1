@@ -51,42 +51,65 @@ def save_courses(data):
 # Routes
 @app.route('/')
 def index():
-    return render_template('index.html')
+    with tracer.start_as_current_span("index_page", kind=trace.SpanKind.SERVER) as span:
+        # Adding trace attributes
+        span.set_attribute("http.method", request.method)
+        span.set_attribute("http.url", request.url)
+        span.set_attribute("user.ip", request.remote_addr)  # User's IP address
+        return render_template('index.html')
 
 
 @app.route('/catalog')
 def course_catalog():
-    courses = load_courses()
-    return render_template('course_catalog.html', courses=courses)
+    with tracer.start_as_current_span("course_catalog", kind=SpanKind.SERVER) as span:
+        span.set_attribute("http.method", request.method)
+        span.set_attribute("http.url", request.url)
+        span.add_event("Fetching course catalog")#opentelemtry 2(1)
+        courses = load_courses()
+        span.add_event("Loaded courses from file", {"course_count": len(courses)})
+        return render_template('course_catalog.html', courses=courses)
 
 
 @app.route('/add_course', methods=['GET', 'POST'])
 def add_course():
+    with tracer.start_as_current_span("add_course", kind=SpanKind.SERVER) as span:
+        span.set_attribute("http.method", request.method)
+        span.set_attribute("http.url", request.url)#opentelemtry 2(1)
+        
+        
     if request.method == 'POST':
-        course = {
-            'code': request.form['code'],
-            'name': request.form['name'],
-            'instructor': request.form['instructor'],
-            'semester': request.form['semester'],
-            'schedule': request.form['schedule'],
-            'classroom': request.form['classroom'],
-            'prerequisites': request.form['prerequisites'],
-            'grading': request.form['grading'],
-            'description': request.form['description']
-        }
-        #we will check for the missing required fields
+        with tracer.start_as_current_span("validate_course_form") as validation_span:
+            course = {
+                'code': request.form['code'],
+                'name': request.form['name'],
+                'instructor': request.form['instructor'],
+                'semester': request.form['semester'],
+                'schedule': request.form['schedule'],
+                'classroom': request.form['classroom'],
+                'prerequisites': request.form['prerequisites'],
+                'grading': request.form['grading'],
+                'description': request.form['description']
+            }
+        span.set_attribute("course.name", course.get('name', 'Unknown'))
+        span.set_attribute("course.instructor", course.get('instructor', 'Unknown'))#will give unknown as default value 2
+
+        #we will check for the missing required fields 1
         required_fields=['name','instructor']
         missing_fields=[]
         for field in required_fields:
-            if not course[field]:
+            if not course[field].strip():
                 missing_fields.append(field)
                 
         if missing_fields:
+            validation_span.add_event("Validation failed", {"missing_fields": missing_fields})
             logging.error(f"Missing required fields:{','.join(missing_fields)}")#will log an error of missing fileds
             flash(f"Error:These are the required fileds:{','.join(missing_fields)}","error")#will do flash message
             return render_template('add_course.html')
                 
-        save_courses(course)
+        with tracer.start_as_current_span("save_course_data") as save_span:
+            save_courses(course)  # This is the actual function call that saves the course data.
+            save_span.add_event("Course saved successfully", {"course_code": course['code']})#for open telemtry
+        
         logging.info(f"Course added: {course['code']} - {course['name']} by {course['instructor']}")#Will create a log message 
         flash(f"Course '{course['name']}' added successfully!", "success")
         return redirect(url_for('course_catalog'))
@@ -95,11 +118,21 @@ def add_course():
 
 @app.route('/course/<code>')
 def course_details(code):
-    courses = load_courses()
-    course = next((course for course in courses if course['code'] == code), None)
+    with tracer.start_as_current_span("course_details", kind=SpanKind.SERVER) as span:
+       span.set_attribute("http.method", request.method)
+       span.set_attribute("http.url", request.url)
+       span.set_attribute("course.code", code)
+       
+       
+       courses = load_courses()
+       course = next((course for course in courses if course['code'] == code), None)
+       
     if not course:
+        span.add_event("Course not found", {"course_code": code})
         flash(f"No course found with code '{code}'.", "error")
         return redirect(url_for('course_catalog'))
+    
+    span.add_event("Course details fetched", {"course_name": course['name']})       
     return render_template('course_details.html', course=course)
 
 
