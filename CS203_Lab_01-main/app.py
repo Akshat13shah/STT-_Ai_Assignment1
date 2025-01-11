@@ -1,19 +1,24 @@
 import json
 import os
 from flask import Flask, render_template, request, redirect, url_for, flash
-from opentelemetry import trace
+from opentelemetry import trace,metrics
 from opentelemetry.sdk.resources import Resource
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor
 from opentelemetry.exporter.jaeger.thrift import JaegerExporter
 from opentelemetry.instrumentation.flask import FlaskInstrumentor
 from opentelemetry.trace import SpanKind
+from opentelemetry.sdk.metrics import Counter, Histogram 
 import logging#to import logging
+
 
 # Flask App Initialization
 app = Flask(__name__)
 app.secret_key = 'secret'
 COURSE_FILE = 'course_catalog.json'
+
+# Logging Setup
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 # OpenTelemetry Setup
 resource = Resource.create({"service.name": "course-catalog-service"})
@@ -25,6 +30,19 @@ jaeger_exporter = JaegerExporter(
 )
 span_processor = BatchSpanProcessor(jaeger_exporter)
 trace.get_tracer_provider().add_span_processor(span_processor)
+
+#we will setup the metrics Part 3
+meter = metrics.get_meter(__name__)
+request_counter = meter.create_counter(
+    "requests_counter", description="Counts the number of requests per route"
+)
+processing_time_histogram = meter.create_histogram(
+    "processing_time_histogram", description="Tracks processing time per route"
+)
+error_counter = meter.create_counter(
+    "error_counter", description="Counts the number of errors"
+)
+
 FlaskInstrumentor().instrument_app(app)
 
 
@@ -43,9 +61,6 @@ def save_courses(data):
     courses.append(data)  # Append the new course
     with open(COURSE_FILE, 'w') as file:
         json.dump(courses, file, indent=4)
-
-
-# def valid()
 
 
 # Routes
@@ -113,6 +128,7 @@ def add_course():
         logging.info(f"Course added: {course['code']} - {course['name']} by {course['instructor']}")#Will create a log message 
         flash(f"Course '{course['name']}' added successfully!", "success")
         return redirect(url_for('course_catalog'))
+    request_counter.add(1, {"route": "add_course"})
     return render_template('add_course.html')
 
 
@@ -128,11 +144,13 @@ def course_details(code):
        course = next((course for course in courses if course['code'] == code), None)
        
     if not course:
+        error_counter.add(1, {"error": "course_not_found"})
         span.add_event("Course not found", {"course_code": code})
         flash(f"No course found with code '{code}'.", "error")
         return redirect(url_for('course_catalog'))
     
-    span.add_event("Course details fetched", {"course_name": course['name']})       
+    span.add_event("Course details fetched", {"course_name": course['name']})
+    request_counter.add(1, {"route": "course_details"})       
     return render_template('course_details.html', course=course)
 
 
@@ -150,6 +168,10 @@ def manual_trace():
 def auto_instrumented():
     # Automatically instrumented via FlaskInstrumentor
     return "This route is auto-instrumented!", 200
+
+@app.route("/metrics")
+def metrics_endpoint():
+    return meter.collect(), 200
 
 
 if __name__ == '__main__':
