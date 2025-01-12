@@ -33,14 +33,36 @@
         "description": ""
     },
     {
-        "code": " ",
-        "name": " ",
-        "instructor": " ",
-        "semester": " ",
-        "schedule": " ",
-        "classroom": " ",
-        "prerequisites": " ",
-        "grading": " ",
-        "description": " "
+        "code": "dufhc",
+        "name": "eee",
+        "instructor": "ee",
+        "semester": "",
+        "schedule": "",
+        "classroom": "",
+        "prerequisites": "",
+        "grading": "",
+        "description": ""
+    },
+    {
+        "code": "coui",
+        "name": "wuwu",
+        "instructor": "www",
+        "semester": "",
+        "schedule": "",
+        "classroom": "",
+        "prerequisites": "",
+        "grading": "",
+        "description": ""
+    },
+    {
+        "code": "4",
+        "name": "Aksht",
+        "instructor": "ALsat",
+        "semester": "s",
+        "schedule": "s",
+        "classroom": "s",
+        "prerequisites": "s",
+        "grading": "ss",
+        "description": ""
     }
 ]

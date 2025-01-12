@@ -1,0 +1,10 @@
+{"level": "INFO", "message": "Rendering index page", "time": "2025-01-12 19:47:52,075", "name": "__main__", "filename": "app.py", "lineno": 82}
+{"level": "INFO", "message": "Fetching course catalog", "time": "2025-01-12 19:47:53,274", "name": "__main__", "filename": "app.py", "lineno": 92}
+{"level": "INFO", "message": "Loaded courses from file", "time": "2025-01-12 19:47:53,276", "name": "__main__", "filename": "app.py", "lineno": 96}
+{"level": "INFO", "message": "Fetching course catalog", "time": "2025-01-12 19:47:54,799", "name": "__main__", "filename": "app.py", "lineno": 92}
+{"level": "INFO", "message": "Loaded courses from file", "time": "2025-01-12 19:47:54,800", "name": "__main__", "filename": "app.py", "lineno": 96}
+{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-12 19:47:56,467", "name": "__main__", "filename": "app.py", "lineno": 105}
+{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-12 19:48:41,586", "name": "__main__", "filename": "app.py", "lineno": 105}
+{"level": "INFO", "message": "Form submitted", "time": "2025-01-12 19:48:41,587", "name": "__main__", "filename": "app.py", "lineno": 109}
+{"level": "INFO", "message": "Fetching course catalog", "time": "2025-01-12 19:48:41,613", "name": "__main__", "filename": "app.py", "lineno": 92}
+{"level": "INFO", "message": "Loaded courses from file", "time": "2025-01-12 19:48:41,663", "name": "__main__", "filename": "app.py", "lineno": 96}
