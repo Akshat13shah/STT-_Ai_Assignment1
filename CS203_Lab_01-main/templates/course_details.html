@@ -2,16 +2,62 @@
 <html>
 <head>
     <title>{{ course.name }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2C3E50;
+            margin-top: 50px;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        strong {
+            color: #2C3E50;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        a:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
-    <h1>{{ course.name }} ({{ course.code }})</h1>
-    <p><strong>Instructor:</strong> {{ course.instructor }}</p>
-    <p><strong>Semester:</strong> {{ course.semester }}</p>
-    <p><strong>Schedule:</strong> {{ course.schedule }}</p>
-    <p><strong>Classroom:</strong> {{ course.classroom }}</p>
-    <p><strong>Prerequisites:</strong> {{ course.prerequisites }}</p>
-    <p><strong>Grading:</strong> {{ course.grading }}</p>
-    <p><strong>Description:</strong> {{ course.description }}</p>
-    <a href="{{ url_for('course_catalog') }}">Back to Catalog</a>
+    <div class="container">
+        <h1>{{ course.name }} ({{ course.code }})</h1>
+        <p><strong>Instructor:</strong> {{ course.instructor }}</p>
+        <p><strong>Semester:</strong> {{ course.semester }}</p>
+        <p><strong>Schedule:</strong> {{ course.schedule }}</p>
+        <p><strong>Classroom:</strong> {{ course.classroom }}</p>
+        <p><strong>Prerequisites:</strong> {{ course.prerequisites }}</p>
+        <p><strong>Grading:</strong> {{ course.grading }}</p>
+        <p><strong>Description:</strong> {{ course.description }}</p>
+        <a href="{{ url_for('course_catalog') }}">Back to Catalog</a>
+    </div>
 </body>
 </html>

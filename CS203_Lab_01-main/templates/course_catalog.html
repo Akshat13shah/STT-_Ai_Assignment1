@@ -3,8 +3,13 @@
 <h2>Course Catalog</h2>
 <ul>
     {% for course in courses %}
+        <hr>
         <li><a href="{{ url_for('course_details', code=course['code']) }}">{{ course.name }}</a> - {{ course.code }}</li>
     {% endfor %}
 </ul>
+<p class="text-center mt-4">
+    <hr>
+    <a href="{{ url_for('add_course') }}" class="btn btn-primary btn-lg">Add Course to the Catalogue</a>
+</p>
 {% endblock %}
 

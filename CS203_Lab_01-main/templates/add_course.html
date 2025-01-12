@@ -4,31 +4,148 @@
     {% block content %}
 <head>
     <title>Add Course</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f7f7f7, #d9e7fd);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 70%; /* Increased width for a broader layout */
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transform: translateY(10px);
+            transition: transform 0.3s ease-in-out;
+        }
+        .container:hover {
+            transform: translateY(0);
+        }
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-wrap: wrap; /* Allowing the form to be more flexible */
+            gap: 20px; /* Adding space between form elements */
+            justify-content: space-between; /* Ensures elements are spaced evenly */
+        }
+        .form-group {
+            width: 48%; /* Making each field take up about half the available width */
+            min-width: 200px; /* Ensuring fields don't get too small on smaller screens */
+        }
+        label {
+            margin-bottom: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #555;
+            display: block;
+        }
+        input, textarea {
+            padding: 12px;
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        input:focus, textarea:focus {
+            border-color: #007BFF;
+            box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 12px 30px;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            width: 100%; /* Make the submit button span the full width */
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #007BFF;
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Add a New Course</h1>
-    <form method="post">
-        <label for="code">Course Code:</label><br>
-        <input type="text" id="code" name="code" required><br>
-        <label for="name">Course Name:</label><br>
-        <input type="text" id="name" name="name" required><br>
-        <label for="instructor">Instructor:</label><br>
-        <input type="text" id="instructor" name="instructor"><br>
-        <label for="semester">Semester:</label><br>
-        <input type="text" id="semester" name="semester"><br>
-        <label for="schedule">Schedule:</label><br>
-        <input type="text" id="schedule" name="schedule"><br>
-        <label for="classroom">Classroom:</label><br>
-        <input type="text" id="classroom" name="classroom"><br>
-        <label for="prerequisites">Prerequisites:</label><br>
-        <input type="text" id="prerequisites" name="prerequisites"><br>
-        <label for="grading">Grading:</label><br>
-        <input type="text" id="grading" name="grading"><br>
-        <label for="description">Description:</label><br>
-        <textarea id="description" name="description" rows="4"></textarea><br><br>
-        <input type="submit" value="Add Course">
-    </form>
-    <a href="{{ url_for('index') }}">Back to Home</a>
+    <div class="container">
+        <h1>Add a New Course</h1>
+        <hr>
+        <form method="post">
+            <div class="form-group">
+                <label for="code">Course Code:</label>
+                <input type="text" id="code" name="code" required>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Course Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="instructor">Instructor:</label>
+                <input type="text" id="instructor" name="instructor">
+            </div>
+
+            <div class="form-group">
+                <label for="semester">Semester:</label>
+                <input type="text" id="semester" name="semester">
+            </div>
+
+            <div class="form-group">
+                <label for="schedule">Schedule:</label>
+                <input type="text" id="schedule" name="schedule">
+            </div>
+
+            <div class="form-group">
+                <label for="classroom">Classroom:</label>
+                <input type="text" id="classroom" name="classroom">
+            </div>
+
+            <div class="form-group">
+                <label for="prerequisites">Prerequisites:</label>
+                <input type="text" id="prerequisites" name="prerequisites">
+            </div>
+
+            <div class="form-group">
+                <label for="grading">Grading:</label>
+                <input type="text" id="grading" name="grading">
+            </div>
+
+            <div class="form-group" style="width: 100%;"> <!-- Making the description field span full width -->
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4"></textarea>
+            </div>
+
+            <input type="submit" value="Add Course">
+        </form>
+        <a href="{{ url_for('index') }}">Back to Home</a>
+    </div>
 </body>
 {% endblock %}
 </html>
