@@ -1,141 +1,4 @@
-{"level": "INFO", "message": "Rendering index page", "time": "2025-01-12 19:47:52,075", "name": "__main__", "filename": "app.py", "lineno": 82}
-{"level": "INFO", "message": "Fetching course catalog", "time": "2025-01-12 19:47:53,274", "name": "__main__", "filename": "app.py", "lineno": 92}
-{"level": "INFO", "message": "Loaded courses from file", "time": "2025-01-12 19:47:53,276", "name": "__main__", "filename": "app.py", "lineno": 96}
-{"level": "INFO", "message": "Fetching course catalog", "time": "2025-01-12 19:47:54,799", "name": "__main__", "filename": "app.py", "lineno": 92}
-{"level": "INFO", "message": "Loaded courses from file", "time": "2025-01-12 19:47:54,800", "name": "__main__", "filename": "app.py", "lineno": 96}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-12 19:47:56,467", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-12 19:48:41,586", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-12 19:48:41,587", "name": "__main__", "filename": "app.py", "lineno": 109}
-{"level": "INFO", "message": "Fetching course catalog", "time": "2025-01-12 19:48:41,613", "name": "__main__", "filename": "app.py", "lineno": 92}
-{"level": "INFO", "message": "Loaded courses from file", "time": "2025-01-12 19:48:41,663", "name": "__main__", "filename": "app.py", "lineno": 96}
-{"level": "INFO", "message": "Rendering index page", "time": "2025-01-12 22:22:08,286", "name": "__main__", "filename": "app.py", "lineno": 82}
-{"level": "INFO", "message": "Rendering index page", "time": "2025-01-12 22:22:10,786", "name": "__main__", "filename": "app.py", "lineno": 82}
-{"level": "INFO", "message": "Rendering index page", "time": "2025-01-12 22:22:11,058", "name": "__main__", "filename": "app.py", "lineno": 82}
-{"level": "INFO", "message": "Rendering index page", "time": "2025-01-12 22:22:11,147", "name": "__main__", "filename": "app.py", "lineno": 82}
-{"level": "INFO", "message": "Rendering index page", "time": "2025-01-13 19:33:54,887", "name": "__main__", "filename": "app.py", "lineno": 82}
-{"level": "INFO", "message": "Rendering index page", "time": "2025-01-13 19:33:55,451", "name": "__main__", "filename": "app.py", "lineno": 82}
-{"level": "INFO", "message": "Rendering index page", "time": "2025-01-13 19:33:55,485", "name": "__main__", "filename": "app.py", "lineno": 82}
-{"level": "INFO", "message": "Rendering index page", "time": "2025-01-13 19:33:55,518", "name": "__main__", "filename": "app.py", "lineno": 82}
-{"level": "INFO", "message": "Rendering index page", "time": "2025-01-13 19:33:56,013", "name": "__main__", "filename": "app.py", "lineno": 82}
-{"level": "INFO", "message": "Fetching course catalog", "time": "2025-01-13 19:37:04,136", "name": "__main__", "filename": "app.py", "lineno": 92}
-{"level": "INFO", "message": "Loaded courses from file", "time": "2025-01-13 19:37:04,138", "name": "__main__", "filename": "app.py", "lineno": 96}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-13 19:37:17,208", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-13 19:37:20,830", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-13 19:37:20,830", "name": "__main__", "filename": "app.py", "lineno": 109}
-{"level": "INFO", "message": "Fetching course catalog", "time": "2025-01-13 19:37:23,196", "name": "__main__", "filename": "app.py", "lineno": 92}
-{"level": "INFO", "message": "Loaded courses from file", "time": "2025-01-13 19:37:23,197", "name": "__main__", "filename": "app.py", "lineno": 96}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-13 19:37:27,390", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Fetching course catalog", "time": "2025-01-13 19:37:29,492", "name": "__main__", "filename": "app.py", "lineno": 92}
-{"level": "INFO", "message": "Loaded courses from file", "time": "2025-01-13 19:37:29,535", "name": "__main__", "filename": "app.py", "lineno": 96}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-13 19:37:36,583", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-13 19:37:42,522", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-13 19:37:42,524", "name": "__main__", "filename": "app.py", "lineno": 109}
-{"level": "INFO", "message": "Fetching course catalog", "time": "2025-01-13 19:37:42,556", "name": "__main__", "filename": "app.py", "lineno": 92}
-{"level": "INFO", "message": "Loaded courses from file", "time": "2025-01-13 19:37:42,558", "name": "__main__", "filename": "app.py", "lineno": 96}
-{"level": "INFO", "message": "Fetching course catalog", "time": "2025-01-13 19:37:47,459", "name": "__main__", "filename": "app.py", "lineno": 92}
-{"level": "INFO", "message": "Loaded courses from file", "time": "2025-01-13 19:37:47,460", "name": "__main__", "filename": "app.py", "lineno": 96}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-13 19:38:56,705", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Rendering index page", "time": "2025-01-14 11:10:49,804", "name": "__main__", "filename": "app.py", "lineno": 82}
-{"level": "INFO", "message": "Fetching course catalog", "time": "2025-01-14 11:13:09,889", "name": "__main__", "filename": "app.py", "lineno": 92}
-{"level": "INFO", "message": "Loaded courses from file", "time": "2025-01-14 11:13:09,912", "name": "__main__", "filename": "app.py", "lineno": 96}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 11:13:13,568", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Fetching course catalog", "time": "2025-01-14 11:13:14,708", "name": "__main__", "filename": "app.py", "lineno": 92}
-{"level": "INFO", "message": "Loaded courses from file", "time": "2025-01-14 11:13:14,710", "name": "__main__", "filename": "app.py", "lineno": 96}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 11:13:37,018", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 11:13:41,747", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 11:13:41,747", "name": "__main__", "filename": "app.py", "lineno": 109}
-{"level": "INFO", "message": "Fetching course catalog", "time": "2025-01-14 11:13:41,798", "name": "__main__", "filename": "app.py", "lineno": 92}
-{"level": "INFO", "message": "Loaded courses from file", "time": "2025-01-14 11:13:41,798", "name": "__main__", "filename": "app.py", "lineno": 96}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 11:15:08,382", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 11:15:10,177", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 11:15:10,178", "name": "__main__", "filename": "app.py", "lineno": 109}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 11:22:50,678", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 11:22:50,680", "name": "__main__", "filename": "app.py", "lineno": 109}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 11:23:02,315", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 11:23:02,316", "name": "__main__", "filename": "app.py", "lineno": 109}
-{"level": "INFO", "message": "Fetching course catalog", "time": "2025-01-14 11:23:02,393", "name": "__main__", "filename": "app.py", "lineno": 92}
-{"level": "INFO", "message": "Loaded courses from file", "time": "2025-01-14 11:23:02,400", "name": "__main__", "filename": "app.py", "lineno": 96}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 11:23:13,703", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Rendering index page", "time": "2025-01-14 11:26:06,010", "name": "__main__", "filename": "app.py", "lineno": 82}
-{"level": "INFO", "message": "Rendering index page", "time": "2025-01-14 11:26:07,339", "name": "__main__", "filename": "app.py", "lineno": 82}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 11:26:10,242", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 11:26:38,540", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 11:26:38,540", "name": "__main__", "filename": "app.py", "lineno": 109}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 11:26:46,056", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 11:26:46,057", "name": "__main__", "filename": "app.py", "lineno": 109}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 11:26:52,414", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 11:26:52,415", "name": "__main__", "filename": "app.py", "lineno": 109}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 11:26:58,327", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 11:26:58,328", "name": "__main__", "filename": "app.py", "lineno": 109}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 11:27:10,306", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 11:27:10,308", "name": "__main__", "filename": "app.py", "lineno": 109}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 11:27:21,499", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 11:27:21,500", "name": "__main__", "filename": "app.py", "lineno": 109}
-{"level": "INFO", "message": "Rendering index page", "time": "2025-01-14 12:54:10,807", "name": "__main__", "filename": "app.py", "lineno": 82}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 12:54:13,379", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 12:54:16,216", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 12:54:16,217", "name": "__main__", "filename": "app.py", "lineno": 109}
-{"level": "INFO", "message": "Rendering index page", "time": "2025-01-14 14:57:13,849", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 14:58:20,910", "name": "__main__", "filename": "app.py", "lineno": 129}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 14:58:20,910", "name": "__main__", "filename": "app.py", "lineno": 133}
-{"level": "ERROR", "message": "Missing required fields: code,name,instructor", "time": "2025-01-14 14:58:20,913", "name": "__main__", "filename": "app.py", "lineno": 158}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 14:58:52,956", "name": "__main__", "filename": "app.py", "lineno": 129}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 14:58:52,956", "name": "__main__", "filename": "app.py", "lineno": 133}
-{"level": "ERROR", "message": "Missing required fields: name", "time": "2025-01-14 14:58:52,956", "name": "__main__", "filename": "app.py", "lineno": 158}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 15:00:58,172", "name": "__main__", "filename": "app.py", "lineno": 129}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 15:00:58,172", "name": "__main__", "filename": "app.py", "lineno": 133}
-{"level": "ERROR", "message": "Missing required fields: name,instructor", "time": "2025-01-14 15:00:58,174", "name": "__main__", "filename": "app.py", "lineno": 158}
-{"level": "WARNING", "message": "Missing required fields: name,instructor", "time": "2025-01-14 15:09:30,805", "name": "__main__", "filename": "app.py", "lineno": 159}
-{"level": "WARNING", "message": "Missing required fields: code,name,instructor", "time": "2025-01-14 15:09:33,693", "name": "__main__", "filename": "app.py", "lineno": 159}
-{"level": "WARNING", "message": "Missing required fields: code,name,instructor", "time": "2025-01-14 15:10:02,684", "name": "__main__", "filename": "app.py", "lineno": 159}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 15:10:26,336", "name": "__main__", "filename": "app.py", "lineno": 129}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 15:10:26,338", "name": "__main__", "filename": "app.py", "lineno": 133}
-{"level": "ERROR", "message": "Missing required fields: code,name,instructor", "time": "2025-01-14 15:10:26,341", "name": "__main__", "filename": "app.py", "lineno": 158}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 15:10:29,232", "name": "__main__", "filename": "app.py", "lineno": 129}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 15:10:29,237", "name": "__main__", "filename": "app.py", "lineno": 133}
-{"level": "ERROR", "message": "Missing required fields: code,name,instructor", "time": "2025-01-14 15:10:29,238", "name": "__main__", "filename": "app.py", "lineno": 158}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 15:11:46,419", "name": "__main__", "filename": "app.py", "lineno": 129}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 15:11:46,419", "name": "__main__", "filename": "app.py", "lineno": 133}
-{"level": "ERROR", "message": "Missing required fields: name,instructor", "time": "2025-01-14 15:11:46,441", "name": "__main__", "filename": "app.py", "lineno": 158}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 15:12:38,627", "name": "__main__", "filename": "app.py", "lineno": 129}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 15:12:38,629", "name": "__main__", "filename": "app.py", "lineno": 133}
-{"level": "INFO", "message": "Course added: AB 100 - A B by AAAAA", "time": "2025-01-14 15:12:38,637", "name": "__main__", "filename": "app.py", "lineno": 171}
-{"level": "INFO", "message": "Fetching course catalog", "time": "2025-01-14 15:12:38,688", "name": "__main__", "filename": "app.py", "lineno": 115}
-{"level": "INFO", "message": "Loaded courses from file", "time": "2025-01-14 15:12:38,719", "name": "__main__", "filename": "app.py", "lineno": 119}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 18:46:43,940", "name": "__main__", "filename": "app.py", "lineno": 129}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 18:46:44,169", "name": "__main__", "filename": "app.py", "lineno": 133}
-{"level": "ERROR", "message": "Missing required fields: code,name,instructor", "time": "2025-01-14 18:46:44,300", "name": "__main__", "filename": "app.py", "lineno": 158}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 18:46:52,247", "name": "__main__", "filename": "app.py", "lineno": 129}
-{"level": "INFO", "message": "Rendering index page", "time": "2025-01-14 18:46:56,095", "name": "__main__", "filename": "app.py", "lineno": 105}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 18:46:58,319", "name": "__main__", "filename": "app.py", "lineno": 129}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 18:47:00,873", "name": "__main__", "filename": "app.py", "lineno": 129}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 18:47:00,875", "name": "__main__", "filename": "app.py", "lineno": 133}
-{"level": "ERROR", "message": "Missing required fields: code,name,instructor", "time": "2025-01-14 18:47:00,885", "name": "__main__", "filename": "app.py", "lineno": 158}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 18:48:44,752", "name": "__main__", "filename": "app.py", "lineno": 129}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 18:48:44,752", "name": "__main__", "filename": "app.py", "lineno": 133}
-{"level": "ERROR", "message": "Missing required fields: code,name,instructor", "time": "2025-01-14 18:48:44,756", "name": "__main__", "filename": "app.py", "lineno": 158}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 18:49:11,825", "name": "__main__", "filename": "app.py", "lineno": 129}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 18:49:11,827", "name": "__main__", "filename": "app.py", "lineno": 133}
-{"level": "ERROR", "message": "Missing required fields: code,name,instructor", "time": "2025-01-14 18:49:11,829", "name": "__main__", "filename": "app.py", "lineno": 158}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 18:53:57,529", "name": "__main__", "filename": "app.py", "lineno": 129}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 18:53:57,531", "name": "__main__", "filename": "app.py", "lineno": 133}
-{"level": "ERROR", "message": "Missing required fields: code,name,instructor", "time": "2025-01-14 18:53:57,531", "name": "__main__", "filename": "app.py", "lineno": 158}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 18:54:07,403", "name": "__main__", "filename": "app.py", "lineno": 129}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 18:54:07,403", "name": "__main__", "filename": "app.py", "lineno": 133}
-{"level": "ERROR", "message": "Missing required fields: code,name,instructor", "time": "2025-01-14 18:54:07,478", "name": "__main__", "filename": "app.py", "lineno": 158}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 18:54:13,730", "name": "__main__", "filename": "app.py", "lineno": 129}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 18:54:13,730", "name": "__main__", "filename": "app.py", "lineno": 133}
-{"level": "ERROR", "message": "Missing required fields: code,name,instructor", "time": "2025-01-14 18:54:14,409", "name": "__main__", "filename": "app.py", "lineno": 158}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 18:56:50,706", "name": "__main__", "filename": "app.py", "lineno": 129}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 18:56:50,706", "name": "__main__", "filename": "app.py", "lineno": 133}
-{"level": "ERROR", "message": "Missing required fields: code,name,instructor", "time": "2025-01-14 18:56:50,708", "name": "__main__", "filename": "app.py", "lineno": 158}
-{"level": "INFO", "message": "Accessed add_course route", "time": "2025-01-14 18:56:54,731", "name": "__main__", "filename": "app.py", "lineno": 129}
-{"level": "INFO", "message": "Form submitted", "time": "2025-01-14 18:56:54,731", "name": "__main__", "filename": "app.py", "lineno": 133}
-{"level": "ERROR", "message": "Missing required fields: code,name,instructor", "time": "2025-01-14 18:56:54,731", "name": "__main__", "filename": "app.py", "lineno": 158}
-{"level": "INFO", "message": "Fetching course catalog", "time": "2025-01-14 18:57:00,961", "name": "__main__", "filename": "app.py", "lineno": 115}
-{"level": "INFO", "message": "Loaded courses from file", "time": "2025-01-14 18:57:01,131", "name": "__main__", "filename": "app.py", "lineno": 119}
-{"level": "INFO", "message": "Fetching course catalog", "time": "2025-01-14 18:59:05,462", "name": "__main__", "filename": "app.py", "lineno": 115}
-{"level": "INFO", "message": "Loaded courses from file", "time": "2025-01-14 18:59:05,464", "name": "__main__", "filename": "app.py", "lineno": 119}
+
 {"timestamp": "2025-01-14 19:21:03,890", "level": "INFO", "message": "Fetching course catalog", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 131}
 {"timestamp": "2025-01-14 19:21:03,919", "level": "INFO", "message": "Loaded courses from file", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 135}
 {"timestamp": "2025-01-14 19:21:05,857", "level": "INFO", "message": "Accessed add_course route", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 145}
@@ -161,3 +24,22 @@
 {"timestamp": "2025-01-14 20:15:45,402", "level": "INFO", "message": "Course added: ES 335 - Machine Learning by Prof. Nipun Batra", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 192}
 {"timestamp": "2025-01-14 20:15:45,457", "level": "INFO", "message": "Fetching course catalog", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 135}
 {"timestamp": "2025-01-14 20:15:45,463", "level": "INFO", "message": "Loaded courses from file", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 139}
+{"timestamp": "2025-01-14 22:52:53,813", "level": "INFO", "message": "Accessed add_course route", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 149}
+{"timestamp": "2025-01-14 22:53:13,968", "level": "INFO", "message": "Accessed add_course route", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 149}
+{"timestamp": "2025-01-14 22:53:13,969", "level": "INFO", "message": "Form submitted", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 153}
+{"timestamp": "2025-01-14 22:53:27,090", "level": "INFO", "message": "Course added: ES 335 - Machine Learning by Prof. Nipun Batra", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 192}
+{"timestamp": "2025-01-14 22:53:29,858", "level": "INFO", "message": "Fetching course catalog", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 135}
+{"timestamp": "2025-01-14 22:53:29,859", "level": "INFO", "message": "Loaded courses from file", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 139}
+{"timestamp": "2025-01-14 23:00:40,923", "level": "INFO", "message": "Accessed add_course route", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 149}
+{"timestamp": "2025-01-14 23:00:44,072", "level": "INFO", "message": "Accessed add_course route", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 149}
+{"timestamp": "2025-01-14 23:00:44,101", "level": "INFO", "message": "Form submitted", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 153}
+{"timestamp": "2025-01-14 23:00:44,163", "level": "ERROR", "message": "Missing required fields: code,name,instructor", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 178}
+{"timestamp": "2025-01-14 23:00:57,830", "level": "INFO", "message": "Accessed add_course route", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 149}
+{"timestamp": "2025-01-14 23:00:57,832", "level": "INFO", "message": "Form submitted", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 153}
+{"timestamp": "2025-01-14 23:00:57,832", "level": "ERROR", "message": "Missing required fields: name,instructor", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 178}
+{"timestamp": "2025-01-14 23:01:53,384", "level": "INFO", "message": "Accessed add_course route", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 149}
+{"timestamp": "2025-01-14 23:01:53,384", "level": "INFO", "message": "Form submitted", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 153}
+{"timestamp": "2025-01-14 23:01:53,384", "level": "ERROR", "message": "Missing required fields: code,name,instructor", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 178}
+{"timestamp": "2025-01-14 23:15:15,643", "level": "INFO", "message": "Accessed add_course route", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 148}
+{"timestamp": "2025-01-14 23:15:15,644", "level": "INFO", "message": "Form submitted", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 152}
+{"timestamp": "2025-01-14 23:15:15,648", "level": "ERROR", "message": "Missing required fields: code,name,instructor", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 177}

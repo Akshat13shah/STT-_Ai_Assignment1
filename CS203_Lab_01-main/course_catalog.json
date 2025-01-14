@@ -64,5 +64,16 @@
         "prerequisites": "Python ",
         "grading": "Relative",
         "description": ""
+    },
+    {
+        "code": "ES 335",
+        "name": "Machine Learning",
+        "instructor": "Prof. Nipun Batra",
+        "semester": "Fall 2024",
+        "schedule": "A1 slot 8:30",
+        "classroom": "AB 1/101",
+        "prerequisites": "Python ",
+        "grading": "Relative",
+        "description": ""
     }
 ]

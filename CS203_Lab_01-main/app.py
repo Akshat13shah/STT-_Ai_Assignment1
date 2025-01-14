@@ -47,7 +47,6 @@ tracer = trace.get_tracer(__name__)
 # Create a resource for the service
 resource = Resource.create({"service.name": "course-catalog-service"})
 trace.set_tracer_provider(TracerProvider(resource=resource))
-# tracer = trace.get_tracer(__name__)
 
 # Create a ConsoleSpanExporter
 console_exporter = ConsoleSpanExporter()
