@@ -8,7 +8,7 @@ from opentelemetry.sdk.trace.export import BatchSpanProcessor, ConsoleSpanExport
 from opentelemetry.exporter.jaeger.thrift import JaegerExporter
 from opentelemetry.instrumentation.flask import FlaskInstrumentor
 from opentelemetry.trace import SpanKind
-import logging  # to import logging
+import logging
 
 
 # Flask App Initialization
@@ -32,6 +32,7 @@ class JsonFormatter(logging.Formatter):
         }
         return json.dumps(log_record)
 
+# Set up the logger and log to a file with JSON formatting
 logger = logging.getLogger(__name__)
 file_handler = logging.FileHandler('tracers.json')
 file_handler.setFormatter(JsonFormatter())
@@ -40,31 +41,34 @@ logger.setLevel(logging.INFO)
 
 # OpenTelemetry Setup
 
-
-
-# Example usage
+# Initialize tracer
 tracer = trace.get_tracer(__name__)
-with tracer.start_as_current_span("example-console-span"):
-    print("This span will be printed to the console.")
 
-
+# Create a resource for the service
 resource = Resource.create({"service.name": "course-catalog-service"})
 trace.set_tracer_provider(TracerProvider(resource=resource))
-tracer = trace.get_tracer(__name__)
-jaeger_exporter = JaegerExporter(
-    agent_host_name="localhost",
-    agent_port=6831,
-)
+# tracer = trace.get_tracer(__name__)
+
 # Create a ConsoleSpanExporter
 console_exporter = ConsoleSpanExporter()
 
-# Configure the BatchSpanProcessor
+# Configure the BatchSpanProcessor to use the console exporter
 span_processor = BatchSpanProcessor(console_exporter)
 trace.get_tracer_provider().add_span_processor(span_processor)
 
+# Uncomment the following lines to use the Jaeger exporter instead of the console exporter
+
+# # Jaeger exporter setup (commented out for now)
+# jaeger_exporter = JaegerExporter(
+#     agent_host_name="localhost",
+#     agent_port=6831,
+# )
+
+# # Configure the BatchSpanProcessor to use the console exporter
 # span_processor = BatchSpanProcessor(jaeger_exporter)
 # trace.get_tracer_provider().add_span_processor(span_processor)
 
+# Enable automatic instrumentation for the Flask app
 FlaskInstrumentor().instrument_app(app)
 
 # Global error_count for tracking errors
@@ -74,7 +78,7 @@ error_count = 0
 def load_courses():
     """Load courses from the JSON file."""
     if not os.path.exists(COURSE_FILE):
-        return []  # Return an empty list if the file doesn't exist
+        return []
     with open(COURSE_FILE, 'r') as file:
         return json.load(file)
 
@@ -92,12 +96,12 @@ def save_courses(data):
         error_count += 1
         with tracer.start_as_current_span("save_courses_error", kind=SpanKind.INTERNAL) as span:
             span.set_attribute("error.type", "MissingFields")
-            span.set_attribute("error.count", error_count)  # Count as one error
+            span.set_attribute("error.count", error_count)
             span.add_event(error_message)
         return
     
-    courses = load_courses()  # Load existing courses
-    courses.append(data)  # Append the new course
+    courses = load_courses()
+    courses.append(data)
     try:
         with open(COURSE_FILE, 'w') as file:
             json.dump(courses, file, indent=4)
@@ -117,7 +121,7 @@ def index():
     with tracer.start_as_current_span("index_page", kind=trace.SpanKind.SERVER) as span:
         span.set_attribute("http.method", request.method)
         span.set_attribute("http.url", request.url)
-        span.set_attribute("user.ip", request.remote_addr)  # User's IP address
+        span.set_attribute("user.ip", request.remote_addr)
         logger.info("Rendering index page", extra={"http.method": request.method, "http.url": request.url, "user.ip": request.remote_addr})
         return render_template('index.html')
 
@@ -179,9 +183,10 @@ def add_course():
                 span.set_attribute("error.count", error_count)
                 span.add_event(f"Missing fields: {','.join(missing_fields)}")
             return render_template('add_course.html')
-                
+        
+        # Save the course if validation passes        
         with tracer.start_as_current_span("save_course_data") as save_span:
-            save_courses(course)  # This is the actual function call that saves the course data.
+            save_courses(course)
             save_span.add_event("Course saved successfully", {"course_code": course['code']})
         
         logger.info(f"Course added: {course['code']} - {course['name']} by {course['instructor']}")

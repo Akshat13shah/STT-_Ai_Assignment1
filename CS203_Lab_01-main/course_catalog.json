@@ -55,102 +55,14 @@
         "description": "An in-depth look at operating systems and their design."
     },
     {
-        "code": "ofh",
-        "name": " ",
-        "instructor": "iudgf",
-        "semester": "e",
-        "schedule": "e",
-        "classroom": "e",
-        "prerequisites": "ee",
-        "grading": "e",
-        "description": ""
-    },
-    {
-        "code": "dufhc",
-        "name": "eee",
-        "instructor": "ee",
-        "semester": "",
-        "schedule": "",
-        "classroom": "",
-        "prerequisites": "",
-        "grading": "",
-        "description": ""
-    },
-    {
-        "code": "coui",
-        "name": "wuwu",
-        "instructor": "www",
-        "semester": "",
-        "schedule": "",
-        "classroom": "",
-        "prerequisites": "",
-        "grading": "",
-        "description": ""
-    },
-    {
-        "code": "4",
-        "name": "Aksht",
-        "instructor": "ALsat",
-        "semester": "s",
-        "schedule": "s",
-        "classroom": "s",
-        "prerequisites": "s",
-        "grading": "ss",
-        "description": ""
-    },
-    {
-        "code": "AB 200",
-        "name": "A",
-        "instructor": "AB",
-        "semester": "first 1st",
+        "code": "ES 335",
+        "name": "Machine Learning",
+        "instructor": "Prof. Nipun Batra",
+        "semester": "Fall 2024",
         "schedule": "A1 slot 8:30",
         "classroom": "AB 1/101",
-        "prerequisites": "CS 111",
+        "prerequisites": "Python ",
         "grading": "Relative",
-        "description": ""
-    },
-    {
-        "code": "AB 100",
-        "name": "Hello",
-        "instructor": "d",
-        "semester": "first 1st",
-        "schedule": "A1 slot 8:30",
-        "classroom": "AB 1/101",
-        "prerequisites": "CS 203",
-        "grading": "Relative",
-        "description": ""
-    },
-    {
-        "code": "",
-        "name": "AaAA",
-        "instructor": "AAAAA",
-        "semester": "",
-        "schedule": "",
-        "classroom": "",
-        "prerequisites": "",
-        "grading": "",
-        "description": ""
-    },
-    {
-        "code": "bbbbb",
-        "name": "bbb",
-        "instructor": "bbb",
-        "semester": "",
-        "schedule": "",
-        "classroom": "",
-        "prerequisites": "",
-        "grading": "",
-        "description": ""
-    },
-    {
-        "code": "ASA",
-        "name": "ASA",
-        "instructor": "ASA",
-        "semester": "",
-        "schedule": "",
-        "classroom": "",
-        "prerequisites": "",
-        "grading": "",
         "description": ""
     }
 ]
