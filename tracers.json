@@ -136,3 +136,11 @@
 {"level": "INFO", "message": "Loaded courses from file", "time": "2025-01-14 18:57:01,131", "name": "__main__", "filename": "app.py", "lineno": 119}
 {"level": "INFO", "message": "Fetching course catalog", "time": "2025-01-14 18:59:05,462", "name": "__main__", "filename": "app.py", "lineno": 115}
 {"level": "INFO", "message": "Loaded courses from file", "time": "2025-01-14 18:59:05,464", "name": "__main__", "filename": "app.py", "lineno": 119}
+{"timestamp": "2025-01-14 19:21:03,890", "level": "INFO", "message": "Fetching course catalog", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 131}
+{"timestamp": "2025-01-14 19:21:03,919", "level": "INFO", "message": "Loaded courses from file", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 135}
+{"timestamp": "2025-01-14 19:21:05,857", "level": "INFO", "message": "Accessed add_course route", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 145}
+{"timestamp": "2025-01-14 19:21:15,592", "level": "INFO", "message": "Accessed add_course route", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 145}
+{"timestamp": "2025-01-14 19:21:15,592", "level": "INFO", "message": "Form submitted", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 149}
+{"timestamp": "2025-01-14 19:21:15,608", "level": "INFO", "message": "Course added: ASA - ASA by ASA", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 187}
+{"timestamp": "2025-01-14 19:21:15,676", "level": "INFO", "message": "Fetching course catalog", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 131}
+{"timestamp": "2025-01-14 19:21:15,676", "level": "INFO", "message": "Loaded courses from file", "logger_name": "__main__", "path": "d:\\IIT Gandhinagar\\Sem 4\\STT_AI\\STT-_Ai_Assignment1\\CS203_Lab_01-main\\app.py", "line": 135}
