@@ -22,6 +22,39 @@
         "description": ""
     },
     {
+        "code": "CS102",
+        "name": "Data Structures",
+        "instructor": "Dr. Johnson",
+        "semester": "Spring 2025",
+        "schedule": "Tue, Thu 2:00-3:30 PM",
+        "classroom": "Room 102",
+        "prerequisites": "CS101",
+        "grading": "Midterm 30%, Final 50%, Homework 20%",
+        "description": "An introduction to data structures and algorithms."
+    },
+    {
+        "code": "CS201",
+        "name": "Algorithms",
+        "instructor": "Dr. Lee",
+        "semester": "Fall 2025",
+        "schedule": "Mon, Wed 1:00-2:30 PM",
+        "classroom": "Room 103",
+        "prerequisites": "CS102",
+        "grading": "Midterm 30%, Final 50%, Homework 20%",
+        "description": "A study of algorithms and their applications."
+    },
+    {
+        "code": "CS301",
+        "name": "Operating Systems",
+        "instructor": "Dr. Kim",
+        "semester": "Spring 2026",
+        "schedule": "Tue, Thu 10:00-11:30 AM",
+        "classroom": "Room 104",
+        "prerequisites": "CS201",
+        "grading": "Midterm 30%, Final 50%, Homework 20%",
+        "description": "An in-depth look at operating systems and their design."
+    },
+    {
         "code": "ofh",
         "name": " ",
         "instructor": "iudgf",
@@ -63,6 +96,61 @@
         "classroom": "s",
         "prerequisites": "s",
         "grading": "ss",
+        "description": ""
+    },
+    {
+        "code": "AB 200",
+        "name": "A",
+        "instructor": "AB",
+        "semester": "first 1st",
+        "schedule": "A1 slot 8:30",
+        "classroom": "AB 1/101",
+        "prerequisites": "CS 111",
+        "grading": "Relative",
+        "description": ""
+    },
+    {
+        "code": "AB 100",
+        "name": "Hello",
+        "instructor": "d",
+        "semester": "first 1st",
+        "schedule": "A1 slot 8:30",
+        "classroom": "AB 1/101",
+        "prerequisites": "CS 203",
+        "grading": "Relative",
+        "description": ""
+    },
+    {
+        "code": "",
+        "name": "AaAA",
+        "instructor": "AAAAA",
+        "semester": "",
+        "schedule": "",
+        "classroom": "",
+        "prerequisites": "",
+        "grading": "",
+        "description": ""
+    },
+    {
+        "code": "bbbbb",
+        "name": "bbb",
+        "instructor": "bbb",
+        "semester": "",
+        "schedule": "",
+        "classroom": "",
+        "prerequisites": "",
+        "grading": "",
+        "description": ""
+    },
+    {
+        "code": "ASA",
+        "name": "ASA",
+        "instructor": "ASA",
+        "semester": "",
+        "schedule": "",
+        "classroom": "",
+        "prerequisites": "",
+        "grading": "",
         "description": ""
     }
 ]

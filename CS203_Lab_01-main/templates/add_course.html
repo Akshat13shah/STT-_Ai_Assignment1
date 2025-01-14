@@ -11,7 +11,9 @@
             margin: 0;
             padding: 0;
             color: #333;
+            line-height: 1.6;
         }
+    
         .container {
             width: 70%; /* Increased width for a broader layout */
             margin: 50px auto;
@@ -22,32 +24,41 @@
             transform: translateY(10px);
             transition: transform 0.3s ease-in-out;
         }
+    
         .container:hover {
             transform: translateY(0);
         }
+    
         h1 {
             text-align: center;
-            font-size: 28px;
-            margin-bottom: 30px;
+            font-size: 32px;
+            margin-bottom: 20px;
             color: #333;
+            font-weight: bold;
+            text-transform: uppercase;
         }
+    
         form {
             display: flex;
-            flex-wrap: wrap; /* Allowing the form to be more flexible */
-            gap: 20px; /* Adding space between form elements */
-            justify-content: space-between; /* Ensures elements are spaced evenly */
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
         }
+    
         .form-group {
-            width: 48%; /* Making each field take up about half the available width */
-            min-width: 200px; /* Ensuring fields don't get too small on smaller screens */
+            width: 48%;
+            min-width: 200px;
         }
+    
         label {
             margin-bottom: 8px;
             font-size: 16px;
             font-weight: 600;
             color: #555;
             display: block;
+            transition: color 0.3s ease;
         }
+    
         input, textarea {
             padding: 12px;
             width: 100%;
@@ -58,10 +69,12 @@
             outline: none;
             transition: all 0.3s ease;
         }
+    
         input:focus, textarea:focus {
             border-color: #007BFF;
             box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
         }
+    
         input[type="submit"] {
             background-color: #28a745;
             color: white;
@@ -70,12 +83,17 @@
             padding: 12px 30px;
             font-size: 18px;
             border-radius: 8px;
-            transition: background-color 0.3s ease;
-            width: 100%; /* Make the submit button span the full width */
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
+    
         input[type="submit"]:hover {
             background-color: #218838;
+            transform: scale(1.05);
         }
+    
         a {
             display: block;
             text-align: center;
@@ -86,11 +104,29 @@
             font-weight: 500;
             transition: color 0.3s ease;
         }
+    
         a:hover {
             color: #0056b3;
             text-decoration: underline;
         }
-    </style>
+    
+        .container:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 12px;
+            z-index: -1;
+            transition: background 0.3s ease;
+        }
+    
+        .container:hover:before {
+            background: rgba(0, 0, 0, 0.1);
+        }
+    </style>    
 </head>
 <body>
     <div class="container">
